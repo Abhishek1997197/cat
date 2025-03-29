@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; }
+        #videoContainer { max-width: 800px; margin: auto; }
+    </style>
+</head>
+<body>
+    <h2>Video Player</h2>
+    <div id="videoContainer">
+        <video id="videoPlayer" width="100%" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const videoPlayer = document.getElementById("videoPlayer");
+            videoPlayer.play();
+        });
+    </script>
+</body>
+</html>
